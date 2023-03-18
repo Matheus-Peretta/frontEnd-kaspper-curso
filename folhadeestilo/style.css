@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+h1{
+    background-color: blue;
+    color: white;
+}
+div{
+    width: 100px;
+    height: 150px;
+    background-color: red;
+    transition: width 1.2s;
+}
+div:hover{
+    width: 400px;
+}

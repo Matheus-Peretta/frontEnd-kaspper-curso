@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "coca";
+    src: url(../fonts/LOKICOLA.TTF) format("truetype");
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.814);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+nav{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.814)30%, rgba(104, 0, 0, 0.752));
+    padding: 20px;
+    margin: auto;
+    height: 100px;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.489);
+}
+nav h2{
+    font-size: 100px;
+    font-family: "coca";
+    margin-top: 24px;
+    text-align: end;
+}
+nav p{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 101px;
+    left: 275px;
+    background-color: rgba(104, 0, 0, 0.804);
+    border-radius: 15px 15px 0px 0px;
+}
+nav a.link{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.814);
+    padding: 10px;
+    border-radius: 15px;
+}
+nav a.link:hover{
+    background-color: rgba(211, 211, 211, 0.492);
+    color: black;
+}
+nav a#casa{
+    position: absolute;
+    top: 97px;
+}
+nav a#produto{
+    position: absolute;
+    top: 97px;
+    left: 90px;
+}
+nav a#pagcadastro{
+    position: absolute;
+    top: 97px;
+    left: 182px;
+}
+h1{
+    background-color: rgba(104, 0, 0, 0.752);
+    margin: 30px auto;
+    width: 95vw;
+    padding-left: 20px;
+    border-radius: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.489);
+    box-shadow: 3px 3px 32px rgba(0, 0, 0, 0.489);
+}
+p{
+    text-align: justify;
+    text-align: left;
+    padding: 15px;
+    padding-left: 40px;
+    margin-left: 20px;
+}
+img{
+    width: 50px;
+    border-radius: 25%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+a{
+    display: inline-block;
+}
+img:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    border: 2px solid white;
+    transition: transform .3s, border 0.1s;
+}
+div#sociais{
+    margin-left: 50px;
+}
