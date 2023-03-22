@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-Introdução JavaScript</title>
+    <script src="meuscript.js"></script>
+</head>
+<body>
+    <p id="p1">Olá Mundo JavaScript</p>
+    <button type="button" onclick="document.getElementById('p1').innerHTML = 'Me chamo Matheus e estou estudando js'">Clique em mim</button>
+    <hr>
+    <h1 id="p2">Aula de JavaScript</h1>
+    <button type="button" onclick="document.getElementById('p2').innerHTML = 'h1 alterado'">Altere o h1</button>
+    <hr>
+    <p id="p3"></p>
+    <script> 
+        document.getElementById('p3').innerHTML = "Carregando automaticamente o texto"
+    </script>
+    <hr>
+    <button type="button" onclick="document.getElementById('ksp').innerHTML = 'Kaspper'">Exibe Kaspper</button>
+    <button type="button" onclick="document.getElementById('fls').innerHTML = 'FullStack'">Exibe FullStack</button>
+    <button type="button" onclick="document.getElementById('jw').innerHTML = 'Java Web'">Exibe Java Web</button>
+    <p id="ksp"></p>
+    <p id="fls"></p>
+    <p id="jw"></p>
+    <hr>
+    <p id="exibirdata"></p>
+    <script>
+        const d = new Date();
+        document.getElementById('exibirdata').innerHTML = d.getTime();
+    </script>
+</body>
+</html>
