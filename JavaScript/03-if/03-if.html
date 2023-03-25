@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Comando Condicional IF</title>
+</head>
+<body>
+    <script>
+       var idade = prompt('Digite a idade do usuário');
+       if (idade>=18){
+            console.log('Maior de idade, pode entrar')
+       } else{
+            console.log('menor de idade não entra')        
+       }
+
+       var beneficiario = prompt('Digite o nome do beneficiário')
+       var provaDeVida = 'não';
+       var confirmar = prompt('Vivo? ')
+       if(confirmar == 'sim'){
+            console.log('benefício liberado, pode pagar ao sr(a) '+ beneficiario)
+       } else{
+            console.log('benefício suspenso, não pode pagar')
+        }
+    </script>
+</body>
+</html>
