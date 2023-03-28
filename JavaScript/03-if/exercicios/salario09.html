@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário com Desconto</title>
+</head>
+<body>
+    <h1 style="color: brown;">Salário reajustado</h1>
+    <h2 id="desconto"></h2>
+    <h2 id="novosal"></h2>
+    <script>
+        var salAtual = Number.parseFloat(prompt('Digite seu salário atual: '));
+        var reajuste = Number.parseInt(prompt('Digite quantos porcentos seu salário abaixou: '));
+        var desconto = (reajuste / 100) * salAtual;
+        var novoSal = salAtual - desconto;
+
+
+        document.getElementById('desconto').innerHTML = 'Com a porcentagem digitada, foi descontado do seu salário R$ ' + desconto;
+        document.getElementById('novosal').innerHTML = 'Com o salário reajustado você vai passar a receber R$ ' + novoSal;
+        console.log(salAtual);
+        console.log('-' + desconto);
+        console.log(novoSal);
+    </script>
+</body>
+</html>

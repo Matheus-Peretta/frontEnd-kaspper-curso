@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos de funcionários</title>
+</head>
+<body>
+    <h1>Salário do Mês</h1>
+    <h2 id="salfinal"></h2>
+    <script>
+        var salFixo = Number.parseFloat(prompt('Qual o seu salário fixo? '));
+        var vendaPorCem = Number.parseFloat(prompt('Quantos carros você vendeu? '));
+        var valorTotal = Number.parseFloat(prompt('Quantidade total vendido em dinheiro: '));
+        var vendaFixo = (vendaPorCem * 100); //comissão de cem reais fixa por cada carro vendi.
+        var comissao = valorTotal * 0.05; //5% da qtd total vendida(em dinheiro)
+        var salFinal = salFixo + comissao + vendaFixo;
+
+
+        document.getElementById('salfinal').innerHTML = 'O seu salário deste mês ficou: R$' + salFinal;
+        console.log(salFinal);
+        console.log(comissao);
+        console.log(vendaFixo);
+    </script>
+</body>
+</html>

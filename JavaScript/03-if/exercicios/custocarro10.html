@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custo do carro</title>
+</head>
+<body>
+    <h1></h1>
+    <h2 id="valorfinal"></h2>
+    <script>
+        var custoFabrica = Number.parseFloat(prompt('Qual é o custo de fábrica do veículo? '));
+        var distribuidor = Number.parseInt(prompt('Qual é a porcentagem ao consumidor? '));
+        var impostos = Number.parseInt(prompt('Qual é a porcentagem de imposto cobrada? '));
+        var aumentoDistribuidor = (distribuidor / 100) * custoFabrica;
+        var aumentoImposto = (impostos / 100) * custoFabrica;
+        var valorVeiculo = custoFabrica + aumentoDistribuidor + aumentoImposto;
+
+
+        document.getElementById('valorfinal').innerHTML = 'De acordo com as porcentagens cobrada de ' + distribuidor + '% e ' + impostos + '%. O valor do veículo sairá ' + valorVeiculo;
+        console.log(custoFabrica);
+        console.log(aumentoDistribuidor);
+        console.log(aumentoImposto);
+        console.log(valorVeiculo);
+    </script>
+</body>
+</html>

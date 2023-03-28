@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem dos votos</title>
+</head>
+<body>
+    <h1 style="color: brown;">Percentual dos votos esse ano: </h1>
+    <h2 id="vtbrancos"></h2>
+    <h2 id="vtnulos"></h2>
+    <h2 id="vtvalidos"></h2>
+    <script>
+        var vtbrancos = Number.parseInt(prompt('Quantos votos foram em branco este ano? '));
+        var vtnulos = Number.parseInt(prompt('Quantos votos foram nulos este ano? '));
+        var vtvalidos = Number.parseInt(prompt('Quantos votos foram válidos este ano? ')); 
+        var eleitores = vtbrancos + vtnulos + vtvalidos;
+        var resultadoBranco = (vtbrancos / eleitores) * 100;
+        var resultadoNulos = (vtnulos / eleitores) * 100;
+        var resultadoValidos = (vtvalidos / eleitores) * 100;
+
+        document.getElementById('vtbrancos').innerHTML = resultadoNulos.toFixed(0) + '% votos nulo';
+        document.getElementById('vtnulos').innerHTML = resultadoBranco.toFixed(0) + '% votos em branco';
+        document.getElementById('vtvalidos').innerHTML = resultadoValidos.toFixed(0) + '% votos válidos';
+        console.log(eleitores);
+        console.log(vtbrancos);
+        console.log(vtnulos);
+        console.log(vtvalidos);
+    </script>
+</body>
+</html>
