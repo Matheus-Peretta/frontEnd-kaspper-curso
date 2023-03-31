@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Array / Vetor</title>
+</head>
+<body>
+    <script>
+        /*const alunos = ['carlos','larissa','sandra','santiago'];
+        console.log(alunos.length)
+        for(var i =0; i<alunos.length; i++){
+            console.log(alunos[i])
+        }
+        
+       console.log("---------------------------")
+       */
+       var nomes  = [];
+ 
+       resp = prompt('quantos funcionários vão cadastrar os produtos? ')
+       for (var j = 0; j<resp; j++){
+        nomes[j] = prompt("digitar o nome: ");
+        }
+ 
+       for (var i =0 ; i<nomes.length;i++){
+        console.log(`O funcionário que cadastrou o produto foi: ${nomes[i].toUpperCase()}`)
+       }
+
+       
+       qtdprodutos = prompt('tem quantos produtos para cadastrar? ')
+       produtos = []
+
+       for(var i=0; i<qtdprodutos; i++){
+            produtos[i] = prompt('nome do produto: ')
+       }
+
+       for(var i=0; i<produtos.length; i++){
+            console.log(`O(s) produto(s) cadastrado(s): ${produtos[i]}`)
+       }
+    </script>
+</body>
+</html>
