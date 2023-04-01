@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script>
+        /*
+            for (var nome = 0 ; nome>10; nome++){
+                comandos se condição verdadeira
+            }
+        */
+        /*
+            while (condição){
+                comando se verdadeira a condição
+ 
+                incremento
+            }
+        */
+            //criar um programa que receba um número de alunos
+            //cada aluno com 4 notas calcular média
+           
+            var qtd = prompt('Digite a quantidade de alunos: ');
+            var alunos = []; //
+            var notas = [];
+            var medias = []
+ 
+            for(var i =0; i<qtd; i++){
+                alunos[i] = prompt('Digite o nome do Aluno: ');
+               
+                for (var j =0;j<4;j++){
+                    //fazer CASTING = Mudar o tipo da Variável
+                     notas[j] = parseFloat(prompt('Digite a nota do aluno: '))
+                }
+               
+                medias[i] = (notas[0] + notas[1]+notas[2]+notas[3])/4;
+            }
+
+ 
+            //for d da saída
+            /*
+                for(var i=0;i<alunos.length; i++){
+                    if (medias[i]>=6){
+                        console.log('Aluno: ' + alunos[i] +
+                                ' - Média: '+ medias[i] +
+                                ' - Situação: Aprovado');
+                    }else {
+                        console.log('Aluno: ' + alunos[i] +
+                                ' - Média: '+ medias[i] +
+                                ' - Situação: Reprovado');
+                    }
+                }
+            */
+                var resultado = '';
+            for(var i=0;i<alunos.length; i++){
+                if (medias[i]>=6){
+                   resultado = 'Aprovado';
+                }else {
+                   resultado = 'reprovado';
+                }
+           
+           console.log('Aluno: ' + alunos[i] +
+                               ' - Média: '+ medias[i] +
+                               ' - Situação: '+resultado);
+            }
+    </script>
+</body>
+</html>
