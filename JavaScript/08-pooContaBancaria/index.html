@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Corrente</title>
+    <script src="./js/ContaBancaria.js"></script>
+</head>
+<body>
+    <script>
+        c1 = new ContaBancaria('Matheus', 16572, 3000);
+        console.log('Titular: ' + c1.titular);
+        console.log('Número da Conta: ' + c1.nConta);
+        console.log('Saldo: ' + c1.saldo);
+
+        console.log('==============================')
+
+        c2 = new ContaBancaria('Sara', 12472, 1200);
+        console.log('Titular: ' + c2.titular);
+        console.log('Número da Conta: ' + c2.nConta);
+        console.log('Saldo: ' + c2.saldo);
+
+        console.log('==============================')
+
+        c1.depositar(500);
+        c1.sacar(3000)
+        console.log(c1.saldo);
+    </script>
+</body>
+</html>
